@@ -6,10 +6,10 @@ require 'sinatra/activerecord'
 
 set :database, {adapter: "sqlite3", database: "barbershop.db"}
 
-class Client < ActiveRecord::Base 
+class Clients < ActiveRecord::Base 
 end
 
-class Barber < ActiveRecord::Base
+class Barbers < ActiveRecord::Base
 end
 
 get '/' do
