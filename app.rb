@@ -42,3 +42,8 @@ get '/barber/:id' do
 	@barbers = Barbers.find(params[:id])
 	erb :barber
 end	
+
+get '/bookings' do
+	@clients = Clients.order('created_at DESC')
+	erb :bookings 
+end
